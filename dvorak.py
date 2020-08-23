@@ -144,6 +144,8 @@ rd = 0
 yd = 0
 gd = 0
 
+imgix = 0
+
 # Loop through each character in corpus text
 for i in range(l):
     # get curchar
@@ -159,7 +161,9 @@ for i in range(l):
     if curchar == ' ' or (not curchar in qwerty_keys) or (not curchar in dvorak_keys):
         continue
 
-    savename = 'output/img_' + '{:05d}'.format(i) + '.png'
+    savename = 'output/img_' + '{:05d}'.format(imgix) + '.png'
+    imgix += 1
+
     # Background
     im = Image.open('background.png')
     d = ImageDraw.Draw(im)
