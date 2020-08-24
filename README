@@ -1,3 +1,7 @@
 Small python script to show difference between qwerty and dvorak keyboard layouts, in pictures.
 
 See also http://mkweb.bcgsc.ca/carpalx/
+
+ngrams.py - Small script to count bigrams and trigrams.
+
+corpus/ - Some corpus texts that can be used as input to ngrams.py.
